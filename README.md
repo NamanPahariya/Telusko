@@ -25,7 +25,7 @@ This is a simple movie website built using **React**, designed to display movie 
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/movie-website.git
+   git clone https://github.com/NamanPahariya/Telusko.git
    ```
 2. Navigate to the project directory:
    ```bash
