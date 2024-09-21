@@ -1,0 +1,116 @@
+/* style.css */
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #121212;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+.app {
+  padding: 20px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+header input {
+  padding: 10px;
+  width: 300px;
+  border: none;
+  border-radius: 5px;
+}
+
+.movie-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.movie-card {
+  background-color: #1e1e1e;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.movie-card img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.movie-info {
+  padding: 15px;
+  text-align: center;
+}
+
+.movie-info h3 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.movie-info p {
+  margin: 10px 0;
+  color: #aaa;
+}
+
+.movie-info button {
+  background-color: #e50914;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.movie-info button:hover {
+  background-color: #b20710;
+}
+
+.wishlist {
+  margin-top: 20px;
+}
+
+.wishlist h2 {
+  margin-bottom: 10px;
+}
+
+.wishlist-item {
+  padding: 10px;
+  background-color: #1e1e1e;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #333;
+  color: white;
+}
+
+.navbar input {
+  margin-right: 20px;
+}
+
+.wishlist {
+  display: flex;
+  align-items: center;
+}
+
+.wishlist-link {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+.wishlist-link:hover {
+  text-decoration: underline;
+}

@@ -1,70 +1,63 @@
-# Getting Started with Create React App
+# Movie Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
 
-## Available Scripts
+This is a simple movie website built using **React**, designed to display movie information in the form of cards. Each movie card includes the **movie poster**, **title**, and **release year**. Users can search for specific movies and manage their own wishlist, where they can add or remove favorite movies.
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+- **Movie Card Display**: Movies are displayed in a grid format, with each card containing the following:
+  - Poster Image
+  - Title
+  - Release Year
+- **Search Functionality**: Allows users to search for movies by title. The search bar filters the movies dynamically as users type.
+- **Wishlist Management**: Users can add movies to their wishlist by clicking the 'Add to Wishlist' button on the movie card. The wishlist is accessible through the navbar.
+  - Add to Wishlist
+  - Remove from Wishlist
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Technology Stack
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **React**: JavaScript library used for building user interfaces.
+- **Axios**: For making HTTP requests to the movie API.
+- **Redux**: For state management (handling movie data, search results, and wishlist).
 
-### `npm test`
+## Installation
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/movie-website.git
+   ```
+2. Navigate to the project directory:
+   ```bash
+   cd task
+   ```
+3. Install the dependencies:
+   ```bash
+   npm install
+   ```
+4. Start the development server:
+   ```bash
+   npm start
+   ```
 
-### `npm run build`
+## Movie API
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+The movie data is fetched from a movie API using **Axios**. Make sure to replace the API URL and API key (if required) in the code.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Redux for State Management
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+The app uses **Redux** to manage the application state. The state includes:
 
-### `npm run eject`
+- Movie Data: The list of movies fetched from the API.
+- Search Results: The filtered list of movies based on user input in the search bar.
+- Wishlist: The list of movies added to the user's wishlist.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Wishlist Component
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+The wishlist component is integrated into the **navbar**, allowing users to quickly access their saved movies. Users can also remove movies from the wishlist directly.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Thank you
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## License
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is licensed under the Naman Pahariya.
